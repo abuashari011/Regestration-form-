@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+body {
+   background-image: linear-gradient(to right top, #00ffb1, #00f7c9, #00eedb, #00e3e7, #12d8eb);
+  
+}
+.container {
+    width: 100%;
+    padding: 0 8%;
+    color: #fff;
+    padding-top: 10%;
+}
+.container .left {
+    padding-top: 0px;
+    text-align: center;
+    
+}
+.container .left i {
+    font-size: 100px;
+    animation: mover 1s infinite alternate;
+}
+.left .h1{
+    font-size: 50px;
+}
+.left p {
+    font-size: 22px;
+}
+.left h1 {
+    font-size: 40px;
+    margin: 20px 0px;
+}
+.left button {
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgb(2, 2, 2);
+    background: rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 30px 0px;
+    transition: .5s;
+    font-weight: 700;
+}
+.left button:hover {
+    background: black;
+    border: 1px solid black;
+    color: #fff;
+}
+.container .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(400px,1fr));
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.container .right {
+   margin-top: 40px;
+   width: 400px;
+   text-align: center;
+   background: rgba(255, 255, 255, 0.534);
+   padding: 30px 20px;
+   margin-left: 14%;
+   border-radius: 10px;
+   margin-bottom: 100px;
+   border-top-left-radius: 10% 50%;
+   border-bottom-left-radius: 10% 50%;
+   border-top: 1px solid rgba(255, 255, 255, 0.739);
+   border-left: 1px solid rgba(255, 255, 255, 0.671);
+   box-shadow: 8px 8px 20px 1px rgb(0 168 138 / 40%);
+
+} 
+.right input {
+    padding: 10px 15px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: 10px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.459);
+    color: rgb(139, 139, 139);
+}
+.right .h1 {
+    margin: 10px;
+    color: rgb(87, 87, 87);
+    margin-bottom: 30px;
+}
+.right button {
+    text-align: right;
+    margin-left: 140px;
+    background: transparent;
+    border: 1px solid#05eb9e;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgb(255, 253, 253);
+    background: #05eb9e;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: .5s;
+    font-weight: 700;
+}
+.right button:hover{
+    background:#00c392 ;
+    border: 1px solid#00c392;
+}
+
+@keyframes mover {
+    0%{
+       transform: translateY(0); 
+    }
+    100%{
+        transform: translateY(-40px); 
+     }
+}
